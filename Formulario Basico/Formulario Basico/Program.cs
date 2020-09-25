@@ -1,17 +1,12 @@
 ﻿using System;
 
-namespace Formulario_basico_en_c
+namespace Formulario_Basico
 {
     class Program
     {
         static void Main(string[] args)
         {
-            String Nombre;
-            String ApellidoPaterno;
-            String ApellidoMaterno;
-            String Ocupacion;
-            String Correo;
-            String Telefono;
+            String Nombre, ApellidoPaterno, ApellidoMaterno, Ocupacion, Correo, Telefono;
             int Edad;
 
             Console.WriteLine("REGISTRO EN EL FORMULARIO");
@@ -35,11 +30,11 @@ namespace Formulario_basico_en_c
 
             Console.WriteLine("Ingresa tu edad: ");
             Edad = Convert.ToInt32(Console.ReadLine());
-            if (Edad <= 18)
+            if (Edad < 18)
             {
                 Console.WriteLine("Registro fallido, el usuario es menor de edad");
             }
-            if  (Edad >= 18)
+             
             {
                 Console.WriteLine(Nombre);
                 Console.WriteLine(ApellidoPaterno);
@@ -47,10 +42,11 @@ namespace Formulario_basico_en_c
                 Console.WriteLine(Ocupacion);
                 Console.WriteLine(Correo);
                 Console.WriteLine(Telefono);
-                Console.WriteLine("Registro exitoso, el usuario es mayor de edad);
+
             }
 
-          
+
         }
     }
 }
+
