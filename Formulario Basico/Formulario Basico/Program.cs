@@ -32,17 +32,17 @@ namespace Formulario_Basico
             Edad = Convert.ToInt32(Console.ReadLine());
             if (Edad < 18)
             {
+                Console.WriteLine("Su edad es: " + Edad + "años");
                 Console.WriteLine("Registro fallido, el usuario es menor de edad");
             }
-             
+            else 
             {
-                Console.WriteLine(Nombre);
-                Console.WriteLine(ApellidoPaterno);
-                Console.WriteLine(ApellidoMaterno);
-                Console.WriteLine(Ocupacion);
-                Console.WriteLine(Correo);
-                Console.WriteLine(Telefono);
-
+                Console.WriteLine("Nombre: " + Nombre + "_" + ApellidoPaterno + "_" + ApellidoMaterno);
+                Console.WriteLine("Su ocupacion es: " + Ocupacion);
+                Console.WriteLine("Su correo electronico es: " + Correo);
+                Console.WriteLine("Su numero de telefono es: " + Telefono);
+                Console.WriteLine("Su edad es: " + Edad + "años");
+                Console.WriteLine("Registro exitoso, el usuario es mayor de edad");
             }
 
 
